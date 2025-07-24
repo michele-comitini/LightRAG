@@ -412,4 +412,4 @@ if __name__ == "__main__":
         # test embedding options
         embedding_options = OllamaEmbeddingOptions.options_dict(args)
         print(embedding_options)
-        print(OllamaEmbeddingOptions(num_ctx=3072).asdict())
+        print(OllamaEmbeddingOptions(**embedding_options).asdict())
